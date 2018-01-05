@@ -27,6 +27,12 @@ public class ComparatorTest {
 
 		//data type can be specified or not specified in the parameters.
 		//Lambda supports target typing which infers the object type from the context in which it is used.
+		/**
+		 * target typing is used in contexts such as 
+		 * Variable Declarations, Assignments, Return Statements, Array Initializers, Method or Constructor Arguments
+		 * Lambda Expression bodies, Conditional Expressions ?:,Cast Expressions.
+		 */
+		
 		Collections.sort(list, (String arg1, String arg2)->{
 			return arg1.compareTo(arg2);
 		});
